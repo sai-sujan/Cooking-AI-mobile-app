@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		c1W/joIwj6Og5wEbpBaqK9gUrc8=
+		9y3kpLhwFVjb2L9o7zLw6IUGQJg=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8Ih/VvNDgxwjDnA00Bb3cSJU0kI=
+		yxuwG2HtfiUAg7BW9x6VyMGvvPM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		T7hrDwA9m5SZIDwa3CNxzafXTdo=
+		JrO5sXYc/j4hZTmUYrFEUZaR3cg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		AgmbivfKeCY0Bs1kSvl71PhKHus=
+		JTbgkIH6DjlUvHwtiLetEPL2668=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		ElXXdyowiTPMwZF+Xfq0Qkpwhxg=
+		UfjTHYm8R6hN2wvMwxY7ghiAagk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/cookup_logo.jpeg</key>
 		<data>
@@ -78,19 +78,19 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo1.jpeg</key>
 		<data>
-		OQpWZWavu0lWm+614+vavfCymXA=
-		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo2.jpeg</key>
-		<data>
-		B/3TZS5YvnX3mbiLAQtXkwaV/BI=
+		j1rki6HgobKcAiPTKYSvZzbU0bs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo3.png</key>
 		<data>
 		dA7hFMQ2hC1agK3oiPNUIfG+UQE=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo4.jpeg</key>
+		<data>
+		OQpWZWavu0lWm+614+vavfCymXA=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/food_search_img.png</key>
 		<data>
-		qsfT1SBTf3imWmwx94fBTTnN308=
+		iq/35L+rFOfsIKaYdcCzCxEGhoU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/ramen.jpeg</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		mVm30BDqQSiXbc1oXZ2FH4R7Ih4=
+		nNKyNet3N36pclgmMl3ihWsWzPI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -309,7 +309,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jmr9bpHVfU68ioN82jzdH/McJeQxbEB2BqIraIS9qGc=
+			xbw2pVhXd61oTva4EMN2A408g4fCrWs/vVktBK9ozPw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -323,21 +323,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fWTcJPWxIeZ2CJ2AyVzA84recLToiwwBIkgfWNr7qWc=
+			uDpqkdyJ06nXuBQmlbYIkWllDYQqvr4g8MrWozm2+yQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ncXuDamay1xyoRK4OH3c9ZfRuE02aq/sAddzhd13x08=
+			sBlApIIGGXi/oi7jb5uCVGXVPogtEkPvsN7tw07tJdc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vcwQ4BbTq3PW9v9ocUnTNwtdLDrFQr6qwlNQ/bhPPM4=
+			kU5DqyIH+fI8uW4Y/MyLEx+lRt6DaKQKIaLXVFMQ1io=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -351,7 +351,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FP9nnkjy9YkDRgswsRhYJM6VXf+HrbqNW5MIAJwRFAo=
+			jGkSClrdmenLorkyr7SObcwPx3E1MZ+ZJFrUTH6pNKI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/cookup_logo.jpeg</key>
@@ -365,14 +365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c1J99Y3EHnTLAZVh1k/hqycOikeh7vQ4f6HUTP9ehJc=
-			</data>
-		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo2.jpeg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sxb/HuTTUtKSnGroQAj6YPg2eVdhyqs6zLJUdBNDChQ=
+			M4zWXEz4jfWJtiQEVfMtewqBug2LUvWxFefEUCoRHuE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo3.png</key>
@@ -382,11 +375,18 @@
 			LrCHVc7+dmQVANTmHNihwFY5TOZECPojK5/0ceA6U+k=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/food_camera_logo4.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			c1J99Y3EHnTLAZVh1k/hqycOikeh7vQ4f6HUTP9ehJc=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/food_search_img.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CZKRcrVUWXtWqPTXuAVN80xDKL0P6oBnz8prl5K8rRg=
+			cOzrvLgi89p6p5Widzvp1UoP9REQP55XU+flt/01j1w=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/ramen.jpeg</key>
@@ -435,7 +435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HS0k1zndOBQjiTNh+dTjcBgn9YG75G6YXxAm4goVOCk=
+			1Y5aBqaHZ2NpM748m5n9HLCobv+5xG9aw6dSx3FuoA0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

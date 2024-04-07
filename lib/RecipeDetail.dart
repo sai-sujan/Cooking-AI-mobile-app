@@ -1,4 +1,7 @@
+import 'package:cookingai/ChatPage.dart';
 import 'package:cookingai/CustomBottomNavigationBar.dart';
+import 'package:cookingai/HomePage.dart';
+import 'package:cookingai/SearchPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
@@ -110,8 +113,8 @@ class IngredientsListWidget extends StatelessWidget {
             ? ingredient[1]
             : ''; // If no '-', set text2 to empty string
         return IngredientsWidget(
-          text1: text1,
-          text2: text2,
+          text1: text2,
+          text2: text1,
           backgroundcolor: backgroundcolor,
         );
       }),
@@ -141,12 +144,16 @@ class IngredientsWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text(
-            text1,
-            style: const TextStyle(fontSize: 12),
+          Expanded(
+            child: Text(
+              text1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 12),
+            ),
           ),
           Text(
             text2,
+            overflow: TextOverflow.ellipsis,
             style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
           ),
         ],
@@ -163,6 +170,31 @@ class RecipeDetails extends StatefulWidget {
 }
 
 class _RecipeDetailsState extends State<RecipeDetails> {
+  int _currentIndex = 0; // This will keep track of the current index for the bottom navigation bar.
+
+  // This method will be called when a navigation item is tapped.
+  void _onItemTapped(int index) {
+    if (index == _currentIndex) return; // Do nothing if the current tab is tapped again
+
+    setState(() {
+      _currentIndex = index; // Update the current index
+    });
+
+    switch (index) {
+      case 0: // Home icon
+         Navigator.of(context).pushReplacement(
+          // Use pushReplacement to avoid building a large stack of pages
+          MaterialPageRoute(builder: (context) => HomePage()),
+        );
+        break;
+      case 1: // Search icon
+        Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage())); // Navigate to the SearchPage
+        break;
+      case 2: // Chat icon
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage())); // Navigate to the ChatPage
+        break;
+    }
+  }
   //  Map<String, dynamic> preparationData = {
   //   "Difficulty Level": "Easy",
   //   "Ingredients Required": [
@@ -204,23 +236,20 @@ class _RecipeDetailsState extends State<RecipeDetails> {
 
   Future<void> fetchRecipeData() async {
     // try {
-      // Await the fetch call and store the result in a local variable.
-      Map<String, dynamic> data =
-          await _apiService.fetchRecipeFromSearch('10');
-      print(data);
-      // Call setState and update your state with the new data.
-      setState(() {
-        preparationData = data;
-      });
-      print(preparationData);
+    // Await the fetch call and store the result in a local variable.
+    Map<String, dynamic> data = await _apiService.fetchRecipeFromSearch(' chicken curry');
+    print(data);
+    // Call setState and update your state with the new data.
+    setState(() {
+      preparationData = data;
+    });
+    print(preparationData);
     // } catch (e) {
     //   // Handle any errors here
     //   print('errors');
     //   print(e.toString());
     // }
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -229,7 +258,7 @@ class _RecipeDetailsState extends State<RecipeDetails> {
     final List<String> ingredientsRequired =
         List<String>.from(preparationData['Ingredients Required'] ?? []);
     String timeToMake = preparationData["Time to Make"].toString() ?? "";
-    String difficuilityLevel = preparationData["Difficulty Level"] ?? "";
+    String difficuilityLevel = preparationData["Difficulty"] ?? "";
     String serving = preparationData["Servings"].toString() ?? "";
     String nameOfDish = preparationData["Name of the Dish"] ?? "";
 
@@ -282,7 +311,7 @@ class _RecipeDetailsState extends State<RecipeDetails> {
                 child: Image(
                   image: AssetImage('assets/images/ramen.jpeg'),
                   height: 218,
-                  width: 375,
+                  width: double.infinity,
                   fit: BoxFit.fitWidth,
                 ),
               ),
@@ -375,6 +404,9 @@ class _RecipeDetailsState extends State<RecipeDetails> {
           ),
         ),
       ),
+       bottomNavigationBar: CustomBottomNavigationBar(
+        currentIndex: _currentIndex, // Pass the current index here.
+        onTap: _onItemTapped,) // Pass the onTap callback here.),
     );
   }
 }

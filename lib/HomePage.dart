@@ -80,23 +80,20 @@ class _HomePageState extends State<HomePage> {
                  
                   Padding(
             padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(15.0), // Apply border radius here
-              child: Container(
-                color: Colors.transparent,
-                child: Ink.image(
-          image: AssetImage('assets/images/recipe.jpeg'),
-          fit: BoxFit.cover,
-          width: double.infinity, // Take up all available width
-          height: 165, // Fixed height
-          child: InkWell(
-            onTap: () {
-              // Handle image tap
-              print("Image tapped!");
-            },
-            splashColor: const Color.fromARGB(255, 217, 14, 14).withAlpha(30), // Custom splash color
-          ),
-                ),
+            child: Container(
+              color: Colors.transparent,
+              child: Ink.image(
+                      image: AssetImage('assets/images/recipe.jpeg'),
+                      fit: BoxFit.cover,
+                      width: double.infinity, // Take up all available width
+                      height: 165, // Fixed height
+                      child: InkWell(
+                        onTap: () {
+            // Handle image tap
+            print("Image tapped!");
+                        },
+                        splashColor: Color.fromARGB(255, 155, 151, 151).withAlpha(30), // Custom splash color
+                      ),
               ),
             ),
           ),
@@ -116,23 +113,28 @@ class _HomePageState extends State<HomePage> {
                       children: <Widget>[
                       
                      Column(
+                      
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              GestureDetector(
-                onTap: () {
-          // Define what you want to happen when the image is tapped
-          print("Image tapped");
-                },
-                child: ClipRRect(
-          borderRadius: BorderRadius.circular(16.0), // Set desired radius
-          child: Image.asset(
-            'assets/images/food_camera_logo1.jpeg',
-            fit: BoxFit.cover,
-            height: 160,
-            width: 160,
-          ),
-                ),
+              Padding(
+            padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
+            child: Container(
+              color: Colors.transparent,
+              child: Ink.image(
+                      image: AssetImage('assets/images/food_camera_logo1.jpeg'),
+                      fit: BoxFit.cover,
+                      width: 160, // Take up all available width
+                      height: 160, // Fixed height
+                      child: InkWell(
+                        onTap: () {
+            // Handle image tap
+            print("Image tapped!");
+                        },
+                        splashColor: Color.fromARGB(255, 155, 151, 151).withAlpha(30), // Custom splash color
+                      ),
               ),
+            ),
+          ),
               const Padding(
                 padding: EdgeInsets.fromLTRB(7, 10, 0, 0),
                 child: Text(
@@ -149,23 +151,29 @@ class _HomePageState extends State<HomePage> {
                         //   width: 10,
                         // ),
             Column(
+              
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              GestureDetector(
-                onTap: () {
-          // Define what you want to happen when the image is tapped
-          print("Image tapped");
-                },
-                child: ClipRRect(
-          borderRadius: BorderRadius.circular(16.0), // Set desired radius
-          child: Image.asset(
-            'assets/images/food_search_img.png',
-            fit: BoxFit.cover,
-            height: 160,
-            width: 160,
-          ),
-                ),
+               Padding(
+            padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
+            child: Container(
+              color: Colors.transparent,
+              child: Ink.image(
+                      image: AssetImage('assets/images/food_search_img.png'),
+                      fit: BoxFit.cover,
+                      width: 160, // Take up all available width
+                      height: 160, // Fixed height
+                      child: InkWell(
+                        onTap: () {
+            Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => SearchPage()),
+          );
+                        },
+                        splashColor: Color.fromARGB(255, 155, 151, 151).withAlpha(30), // Custom splash color
+                      ),
               ),
+            ),
+          ),
               const Padding(
                 padding: EdgeInsets.fromLTRB(7, 10, 0, 0),
                 child: Text(
