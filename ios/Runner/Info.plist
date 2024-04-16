@@ -46,10 +46,19 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	
 	<key>NSAppTransportSecurity</key>
 <dict>
     <key>NSAllowsLocalNetworking</key>
     <true/>
 </dict>
+
+	 <key>NSCameraUsageDescription</key>
+    <string>This app needs access to the camera to take photos for uploading recipes.</string>
+  
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>This app needs access to your photo library for uploading pictures of recipes.</string>
+ 
+
 </dict>
 </plist>
