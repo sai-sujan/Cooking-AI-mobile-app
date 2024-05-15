@@ -49,4 +49,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to customize this README file further to include additional details specific to your project.
