@@ -1,4 +1,3 @@
-Sure, here is the revised README file without the team section:
 
 ---
 
